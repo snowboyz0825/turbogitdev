@@ -19,17 +19,6 @@
           "snowboyz0825"
         ]
       },
-      "Whale Shark": {
-        "preview": "[hidden]",
-        "model": "whaleshark",
-        "texture": "whaleshark",
-        "tags": [
-          "Whale Shark"
-        ],
-        "authors": [
-          "snowboyz0825"
-        ]
-      },
       "Dark Matter 3": {
         "preview": "dark_matter3",
         "model": "dark_matter3",
@@ -64,7 +53,7 @@
         ]
       },
       "UFO§k§i§r§b§y§p§o§p": {
-        "preview": "kireby_ufo",
+        "preview": "kirby_ufo",
         "model": "kirby_ufo",
         "texture": "kirby_ufo",
         "tags": [
@@ -140,17 +129,6 @@
           "snowboyz0825"
         ]
       },
-      "Test": {
-        "preview": "[hidden]",
-        "model": "test",
-        "texture": "",
-        "tags": [
-          ""
-        ],
-        "authors": [
-          ""
-        ]
-      },
       "Dress§1": {
         "preview": "dress1",
         "model": "dress",
@@ -209,7 +187,7 @@
         ]
       },
       "Metal Sonic": {
-        "preview": "",
+        "preview": "metal_sonic",
         "model": "metal_sonic",
         "texture": "metal_sonic",
         "tags": [
