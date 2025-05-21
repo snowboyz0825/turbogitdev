@@ -52,7 +52,7 @@
           "popmanthe"
         ]
       },
-      "UFO§k§i§r§b§y§p§o§p": {
+      "Kirby UFO": {
         "preview": "kirby_ufo",
         "model": "kirby_ufo",
         "texture": "kirby_ufo",
@@ -63,7 +63,7 @@
           "popmanthe"
         ]
       },
-      "Furnace§p§o§p": {
+      "Furnace": {
         "preview": "furnace",
         "model": "furnace",
         "texture": "furnace",
@@ -72,17 +72,6 @@
         ],
         "authors": [
           "popmanthe"
-        ]
-      },
-      "Silly Dog": {
-        "preview": "[hidden]",
-        "model": "silly_dog",
-        "texture": "silly_dog",
-        "tags": [
-          "Silly Dog"
-        ],
-        "authors": [
-          "hamsterjam_YT"
         ]
       },
       "MOAB": {
@@ -129,7 +118,7 @@
           "snowboyz0825"
         ]
       },
-      "Dress§1": {
+      "Dress": {
         "preview": "dress1",
         "model": "dress",
         "texture": "dress1",
@@ -258,7 +247,7 @@
         ]
       },
       "Pink Axolotl": {
-        "preview": "ax_pink",
+        "preview": "lucy",
         "model": "lucy",
         "texture": "lucy",
         "tags": [
