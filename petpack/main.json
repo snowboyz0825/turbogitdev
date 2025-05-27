@@ -110,7 +110,7 @@
         "authors": ["snowboyz0825"]
       },
       "Metal Sonic": {
-        "preview": "",
+        "preview": "metal_sonic",
         "model": "metal_sonic",
         "texture": "metal_sonic",
         "tags": ["hidden"],
@@ -152,7 +152,7 @@
         "authors": ["snowboyz0825"]
       },
       "Pink Axolotl": {
-        "preview": "ax_pink",
+        "preview": "lucy",
         "model": "lucy",
         "texture": "lucy",
         "tags": ["Pink Axolotl"],
