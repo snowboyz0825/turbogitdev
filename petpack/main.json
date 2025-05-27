@@ -1,1 +1,580 @@
-{"comment":"Pack assembled by snowboyz0825. Contributed to by many.","entities":["Allay","Wolf","Villager"],"excludeDownloadsFromAuthors":"HeroPixel Games","items":{"Allay":{"Jellyfish":{"preview":"jfish","model":"jfish","texture":"jfish","tags":["Jellyfish"],"authors":["snowboyz0825"]},"Whale Shark":{"preview":"[hidden]","model":"whaleshark","texture":"whaleshark","tags":["Whale Shark"],"authors":["snowboyz0825"]},"Dark Matter 3":{"preview":"dark_matter3","model":"dark_matter3","texture":"dark_matter3","tags":["hidden"],"authors":["popmanthe"]},"Mushroom Toppin":{"preview":"mushroom_toppin","model":"mushroom_toppin","texture":"mushroom_toppin","tags":["hidden"],"authors":["popmanthe"]},"Dark Matter":{"preview":"dark_matter","model":"dark_matter","texture":"dark_matter","tags":["hidden"],"authors":["popmanthe"]},"UFO§k§i§r§b§y§p§o§p":{"preview":"kireby_ufo","model":"kirby_ufo","texture":"kirby_ufo","tags":["hidden"],"authors":["popmanthe"]},"Furnace§p§o§p":{"preview":"furnace","model":"furnace","texture":"furnace","tags":["hidden"],"authors":["popmanthe"]},"Silly Dog":{"preview":"[hidden]","model":"silly_dog","texture":"silly_dog","tags":["Silly Dog"],"authors":["hamsterjam_YT"]},"MOAB":{"preview":"MOAB","model":"MOAB","texture":"MOAB","tags":["MOAB"],"authors":["hamster_YT"]},"Monkey Heli":{"preview":"monkey_heli","model":"monkey_heli","texture":"monkey_heli","tags":["monkey_heli"],"authors":["hamsterjam_YT"]},"Sideying Panda":{"preview":"panda_sideye","model":"panda_sideye","texture":"panda_sideye","tags":["Panda§s§i§d§e§y§e"],"authors":["snowboyz0825"]},"Panda":{"preview":"panda","model":"panda","texture":"panda","tags":["Panda"],"authors":["snowboyz0825"]},"Test":{"preview":"[hidden]","model":"test","texture":"","tags":[""],"authors":[""]},"Dress§1":{"preview":"dress1","model":"dress","texture":"dress1","tags":["Dress§1"],"authors":["snowboyz0825"]},"Wedding Dress":{"preview":"wed_dress","model":"wed_dress","texture":"wed_dress","tags":["Wedding Dress","Bride"],"authors":["snowboyz0825"]},"Tuxedo + Hat":{"preview":"tux_hat","model":"tux_hat","texture":"tux","tags":["Tuxedo§h§a§t"],"authors":["snowboyz0825"]},"White Tuxedo + Hat":{"preview":"white_tux_hat","model":"tux_hat","texture":"white_tux_hat","tags":["hidden"],"authors":["snowboyz0825"]},"Tuxedo":{"preview":"tux","model":"tux","texture":"tux","tags":["Groom","Tuxedo"],"authors":["snowboyz0825"]},"Metal Sonic":{"preview":"","model":"metal_sonic","texture":"metal_sonic","tags":["hidden"],"authors":["popmanthe"]},"UFO":{"preview":"ufo","model":"ufo","texture":"ufo","tags":["UFO","???"],"authors":["snowboyz0825"]},"Halo":{"preview":"halo","model":"halo","texture":"halo","tags":["Halo"],"authors":["snowboyz0825","Mojang"]},"Gamer":{"preview":"gamer","model":"gamer","texture":"gamer","tags":["Gamer","Pink Headphones"],"authors":["snowboyz0825","Mojang"]},"Blu§-§/§O§t§u§$§1§3§3":{"preview":"blu","model":"blu","texture":"blu","tags":["hidden"],"authors":["sally_5808"]},"Glow Squid":{"preview":"gsquid","model":"gsquid","texture":"gsquid","tags":["Glow Squid","Squidward"],"authors":["snowboyz0825"]},"Pink Axolotl":{"preview":"ax_pink","model":"lucy","texture":"lucy","tags":["Pink Axolotl"],"authors":["Mojang"]},"Golden Axolotl":{"preview":"ax_gold","model":"lucy","texture":"ax_gold","tags":["Gold Axolotl"],"authors":["Mojang"]},"Brown Axolotl":{"preview":"ax_brown","model":"lucy","texture":"ax_brown","tags":["Brown Axolotl"],"authors":["Mojang"]},"Blue Axolotl":{"preview":"ax_blue","model":"lucy","texture":"ax_blue","tags":["Blue Axolotl"],"authors":["Mojang"]},"Eggman§c§l§a§s§s§i§c":{"preview":"eggmanclassic","model":"eggmanclassic","texture":"eggmanclassic","tags":["redacted"],"authors":["popmanthe11"]},"Eggy King":{"preview":"eggyking","model":"eggyking","texture":"eggyking","tags":["Event Reward (redacted)"],"authors":["snowboyz0825"]},"Glow Pikmin":{"preview":"glow_pikmin2","model":"glow_pikmin","texture":"glow_pikmin","tags":["Glow Pikmin"],"authors":["Glow Pikmin"]},"Broken Vessel":{"preview":"broken_vessel","model":"broken_vessel","texture":"broken_vessel","tags":["Broken Vessel"],"authors":["Attribution Needed"]},"Balloon Zombie":{"preview":"bloon_zombie","model":"bloon_zombie","texture":"bloon_zombie","tags":["Ballon Zombie"],"authors":["Attribution Needed"]},"Vessel":{"preview":"vessel","model":"vessel","texture":"vessel","tags":["Vessel"],"authors":["Attribution Needed"]},"Stewie§G§r§i§f§f§i§n":{"preview":"stewie","model":"stewie","texture":"stewie","tags":["redacted"],"authors":["popmanthe11"]},"V1":{"preview":"V1","model":"MACHINE","texture":"V1","tags":["V1"],"authors":["Attribution Needed"]},"V2":{"preview":"V2","model":"MACHINE","texture":"V2","tags":["V2"],"authors":["Attribution Needed"]},"Crystal":{"preview":"crystal","model":"crystal","texture":"crystal","tags":["Crystal"],"authors":["Attribution Needed"]},"nobody":{"preview":"whiteguy","model":"whiteguy","texture":"whiteguy","tags":["redacted"],"authors":["hidden"]},"Baby Ghast":{"preview":"ghast","model":"ghast","texture":"babyghast","tags":["redacted"],"authors":["snowboyz0825","4J Studios"]},"Knight":{"preview":"knight","model":"knight","texture":"knight","tags":["Knight"],"authors":["Attribution Needed"]},"Knight§§":{"preview":"knight2","model":"knight2","texture":"knight2","tags":["Knight§§"],"authors":["snowboyz0825"]},"Eggman":{"preview":"eggman","model":"eggman","texture":"eggman","tags":["Eggman"],"authors":["Attribution Needed"]},"More Allays Axolotl":{"preview":"axolotl_more_allays","model":"axolotl_more_allays","texture":"axolotl_more_allays","tags":["Axolotl§M§A"],"authors":["HeroPixel Games"]},"More Allays Bee":{"preview":"bee_more_allays","model":"bee_more_allays","texture":"bee_more_allays","tags":["Bee§M§A"],"authors":["HeroPixel Games"]},"More Allays Creeper":{"preview":"creeper_more_allays","model":"creeper_more_allays","texture":"creeper_more_allays","tags":["Creeper§M§A"],"authors":["HeroPixel Games"]},"More Allays Enderman":{"preview":"enderman_more_allays","model":"enderman_more_allays","texture":"enderman_more_allays","tags":["Endermsn§M§A"],"authors":["HeroPixel Games"]},"More Allays Fox":{"preview":"fox_more_allays","model":"fox_more_allays","texture":"fox_more_allays","tags":["Fox§M§A"],"authors":["HeroPixel Games"]},"More Allays Frog":{"preview":"frog_more_allays","model":"frog_more_allays","texture":"frog_more_allays","tags":["Frog§M§A"],"authors":["HeroPixel Games"]},"More Allays Goat":{"preview":"goat_more_allays","model":"goat_more_allays","texture":"goat_more_allays","tags":["Goat§M§A"],"authors":["HeroPixel Games"]},"More Allays Mooshroom":{"preview":"mooshroom_more_allays","model":"mooshroom_more_allays","texture":"mooshroom_more_allays","tags":["Mooshroom§M§A"],"authors":["HeroPixel Games"]},"More Allays Ocelot":{"preview":"ocelot_more_allays","model":"ocelot_more_allays","texture":"ocelot_more_allays","tags":["Ocelot§M§A"],"authors":["HeroPixel Games"]},"More Allays Pig":{"preview":"pig_more_allays","model":"pig_more_allays","texture":"pig_more_allays","tags":["Pig§M§A"],"authors":["HeroPixel Games"]},"More Allays Rabbit":{"preview":"rabbit_more_allays","model":"rabbit_more_allays","texture":"rabbit_more_allays","tags":["Rabbit§M§A"],"authors":["HeroPixel Games"]},"More Allays Sheep":{"preview":"sheep_more_allays","model":"sheep_more_allays","texture":"sheep_more_allays","tags":["Sheep§M§A"],"authors":["HeroPixel Games"]},"More Allays Skeleton":{"preview":"skeleton_more_allays","model":"skeleton_more_allays","texture":"skeleton_more_allays","tags":["Skeleton§M§A"],"authors":["HeroPixel Games"]},"More Allays Warden":{"preview":"warden_more_allays","model":"warden_more_allays","texture":"warden_more_allays","tags":["Warden§M§A"],"authors":["HeroPixel Games"]},"More Allays Wither":{"preview":"wither_more_allays","model":"wither_more_allays","texture":"wither_more_allays","tags":["Wither§M§A"],"authors":["HeroPixel Games"]},"More Allays Zombie":{"preview":"zombie_more_allays","model":"zombie_more_allays","texture":"zombie_more_allays","tags":["Zombie§M§A"],"authors":["HeroPixel Games"]},"Cookie":{"preview":"cookie","model":"cookie","texture":"cookie","tags":["Cookie"],"authors":["snowboyz0825"]},"Sonic":{"preview":"sonic","model":"sonic","texture":"sonic","tags":["redacted"],"authors":["popmanthe11"]},"Tails":{"preview":"tails","model":"tails","texture":"tails","tags":["redacted"],"authors":["popmanthe11"]},"Translucent":{"preview":"translucent","model":"translucent","texture":"translucent","tags":["Translucent"],"authors":["snowboyz0825"]},"Farmer":{"preview":"farmer","model":"farmer","texture":"farmer","tags":["Farmer"],"authors":["snowboyz0825"]},"Balloon 0":{"preview":"bloon_0","model":"bloon","texture":"bloon","tags":["Balloon§0"],"authors":["snowboyz0825"]},"Balloon 1":{"preview":"bloon_1","model":"bloon","texture":"bloon","tags":["Balloon§1"],"authors":["snowboyz0825"]},"Balloon 2":{"preview":"bloon_2","model":"bloon","texture":"bloon","tags":["Balloon§2"],"authors":["snowboyz0825"]},"Balloon 3":{"preview":"bloon_3","model":"bloon","texture":"bloon","tags":["Balloon§3"],"authors":["snowboyz0825"]},"Balloon 4":{"preview":"bloon_4","model":"bloon","texture":"bloon","tags":["Balloon§4"],"authors":["snowboyz0825"]},"Balloon 5":{"preview":"bloon_5","model":"bloon","texture":"bloon","tags":["Balloon§5"],"authors":["snowboyz0825"]},"Balloon 6":{"preview":"bloon_6","model":"bloon","texture":"bloon","tags":["Balloon§6"],"authors":["snowboyz0825"]},"Balloon 7":{"preview":"bloon_7","model":"bloon","texture":"bloon","tags":["Balloon§7"],"authors":["snowboyz0825"]},"Balloon 8":{"preview":"bloon_8","model":"bloon","texture":"bloon","tags":["Balloon§8"],"authors":["snowboyz0825"]},"Balloon 9":{"preview":"bloon_9","model":"bloon","texture":"bloon","tags":["Balloon§9"],"authors":["snowboyz0825"]},"Balloon A":{"preview":"bloon_a","model":"bloon","texture":"bloon","tags":["Balloon§a"],"authors":["snowboyz0825"]},"Balloon B":{"preview":"bloon_b","model":"bloon","texture":"bloon","tags":["Balloon§b"],"authors":["snowboyz0825"]},"Balloon C":{"preview":"bloon_c","model":"bloon","texture":"bloon","tags":["Balloon§c"],"authors":["snowboyz0825"]},"Balloon D":{"preview":"bloon_d","model":"bloon","texture":"bloon","tags":["Balloon§d"],"authors":["snowboyz0825"]},"Balloon E":{"preview":"bloon_e","model":"bloon","texture":"bloon","tags":["Balloon§e"],"authors":["snowboyz0825"]},"Balloon F":{"preview":"bloon_f","model":"bloon","texture":"bloon","tags":["Balloon§f"],"authors":["snowboyz0825"]},"Cuphead":{"preview":"cuphead","model":"cuphead","texture":"cuphead","tags":["Cuphead"],"authors":["snowboyz0825"]},"Mugman":{"preview":"mugman","model":"mugman","texture":"mugman","tags":["Mugman"],"authors":["snowboyz0825"]}},"Wolf":{"Grim":{"preview":"grim","model":"wolf","texture":"grim","tags":["Grim"],"authors":["DanTDM","w0rry"]}},"Villager":{"Dr. Trayaurus":{"preview":"trayaurus","model":"trayaurus","texture":"trayaurus","tags":["Dr. Trayaurus"],"authors":["DanTDM","Mojang"]}}}}
+{
+  "comment": "Pack assembled by snowboyz0825. Contributed to by many.",
+  "entities": ["Allay", "Wolf", "Villager"],
+  "excludeDownloadsFromAuthors": "HeroPixel Games",
+  "items": {
+    "Allay": {
+      "Jellyfish": {
+        "preview": "jfish",
+        "model": "jfish",
+        "texture": "jfish",
+        "tags": ["Jellyfish"],
+        "authors": ["snowboyz0825"]
+      },
+      "Dark Matter 3": {
+        "preview": "dark_matter3",
+        "model": "dark_matter3",
+        "texture": "dark_matter3",
+        "tags": ["hidden"],
+        "authors": ["popmanthe"]
+      },
+      "Mushroom Toppin": {
+        "preview": "mushroom_toppin",
+        "model": "mushroom_toppin",
+        "texture": "mushroom_toppin",
+        "tags": ["hidden"],
+        "authors": ["popmanthe"]
+      },
+      "Dark Matter": {
+        "preview": "dark_matter",
+        "model": "dark_matter",
+        "texture": "dark_matter",
+        "tags": ["hidden"],
+        "authors": ["popmanthe"]
+      },
+      "UFO§k§i§r§b§y§p§o§p": {
+        "preview": "kirby_ufo",
+        "model": "kirby_ufo",
+        "texture": "kirby_ufo",
+        "tags": ["hidden"],
+        "authors": ["popmanthe"]
+      },
+      "Furnace§p§o§p": {
+        "preview": "furnace",
+        "model": "furnace",
+        "texture": "furnace",
+        "tags": ["hidden"],
+        "authors": ["popmanthe"]
+      },
+      "MOAB": {
+        "preview": "MOAB",
+        "model": "MOAB",
+        "texture": "MOAB",
+        "tags": ["MOAB"],
+        "authors": ["hamster_YT"]
+      },
+      "Monkey Heli": {
+        "preview": "monkey_heli",
+        "model": "monkey_heli",
+        "texture": "monkey_heli",
+        "tags": ["monkey_heli"],
+        "authors": ["hamsterjam_YT"]
+      },
+      "Sideying Panda": {
+        "preview": "panda_sideye",
+        "model": "panda_sideye",
+        "texture": "panda_sideye",
+        "tags": ["Panda§s§i§d§e§y§e"],
+        "authors": ["snowboyz0825"]
+      },
+      "Panda": {
+        "preview": "panda",
+        "model": "panda",
+        "texture": "panda",
+        "tags": ["Panda"],
+        "authors": ["snowboyz0825"]
+      },
+      "Dress§1": {
+        "preview": "dress1",
+        "model": "dress",
+        "texture": "dress1",
+        "tags": ["Dress§1"],
+        "authors": ["snowboyz0825"]
+      },
+      "Wedding Dress": {
+        "preview": "wed_dress",
+        "model": "wed_dress",
+        "texture": "wed_dress",
+        "tags": ["Wedding Dress", "Bride"],
+        "authors": ["snowboyz0825"]
+      },
+      "Tuxedo + Hat": {
+        "preview": "tux_hat",
+        "model": "tux_hat",
+        "texture": "tux",
+        "tags": ["Tuxedo§h§a§t"],
+        "authors": ["snowboyz0825"]
+      },
+      "White Tuxedo + Hat": {
+        "preview": "white_tux_hat",
+        "model": "tux_hat",
+        "texture": "white_tux_hat",
+        "tags": ["hidden"],
+        "authors": ["snowboyz0825"]
+      },
+      "Tuxedo": {
+        "preview": "tux",
+        "model": "tux",
+        "texture": "tux",
+        "tags": ["Groom", "Tuxedo"],
+        "authors": ["snowboyz0825"]
+      },
+      "Metal Sonic": {
+        "preview": "",
+        "model": "metal_sonic",
+        "texture": "metal_sonic",
+        "tags": ["hidden"],
+        "authors": ["popmanthe"]
+      },
+      "UFO": {
+        "preview": "ufo",
+        "model": "ufo",
+        "texture": "ufo",
+        "tags": ["UFO", "???"],
+        "authors": ["snowboyz0825"]
+      },
+      "Halo": {
+        "preview": "halo",
+        "model": "halo",
+        "texture": "halo",
+        "tags": ["Halo"],
+        "authors": ["snowboyz0825", "Mojang"]
+      },
+      "Gamer": {
+        "preview": "gamer",
+        "model": "gamer",
+        "texture": "gamer",
+        "tags": ["Gamer", "Pink Headphones"],
+        "authors": ["snowboyz0825", "Mojang"]
+      },
+      "Blu§-§/§O§t§u§$§1§3§3": {
+        "preview": "blu",
+        "model": "blu",
+        "texture": "blu",
+        "tags": ["hidden"],
+        "authors": ["sally_5808"]
+      },
+      "Glow Squid": {
+        "preview": "gsquid",
+        "model": "gsquid",
+        "texture": "gsquid",
+        "tags": ["Glow Squid", "Squidward"],
+        "authors": ["snowboyz0825"]
+      },
+      "Pink Axolotl": {
+        "preview": "ax_pink",
+        "model": "lucy",
+        "texture": "lucy",
+        "tags": ["Pink Axolotl"],
+        "authors": ["Mojang"]
+      },
+      "Golden Axolotl": {
+        "preview": "ax_gold",
+        "model": "lucy",
+        "texture": "ax_gold",
+        "tags": ["Gold Axolotl"],
+        "authors": ["Mojang"]
+      },
+      "Brown Axolotl": {
+        "preview": "ax_brown",
+        "model": "lucy",
+        "texture": "ax_brown",
+        "tags": ["Brown Axolotl"],
+        "authors": ["Mojang"]
+      },
+      "Blue Axolotl": {
+        "preview": "ax_blue",
+        "model": "lucy",
+        "texture": "ax_blue",
+        "tags": ["Blue Axolotl"],
+        "authors": ["Mojang"]
+      },
+      "Eggman§c§l§a§s§s§i§c": {
+        "preview": "eggmanclassic",
+        "model": "eggmanclassic",
+        "texture": "eggmanclassic",
+        "tags": ["redacted"],
+        "authors": ["popmanthe11"]
+      },
+      "Eggy King": {
+        "preview": "eggyking",
+        "model": "eggyking",
+        "texture": "eggyking",
+        "tags": ["Event Reward (redacted)"],
+        "authors": ["snowboyz0825"]
+      },
+      "Glow Pikmin": {
+        "preview": "glow_pikmin2",
+        "model": "glow_pikmin",
+        "texture": "glow_pikmin",
+        "tags": ["Glow Pikmin"],
+        "authors": ["Glow Pikmin"]
+      },
+      "Broken Vessel": {
+        "preview": "broken_vessel",
+        "model": "broken_vessel",
+        "texture": "broken_vessel",
+        "tags": ["Broken Vessel"],
+        "authors": ["Attribution Needed"]
+      },
+      "Balloon Zombie": {
+        "preview": "bloon_zombie",
+        "model": "bloon_zombie",
+        "texture": "bloon_zombie",
+        "tags": ["Ballon Zombie"],
+        "authors": ["Attribution Needed"]
+      },
+      "Vessel": {
+        "preview": "vessel",
+        "model": "vessel",
+        "texture": "vessel",
+        "tags": ["Vessel"],
+        "authors": ["Attribution Needed"]
+      },
+      "Stewie§G§r§i§f§f§i§n": {
+        "preview": "stewie",
+        "model": "stewie",
+        "texture": "stewie",
+        "tags": ["redacted"],
+        "authors": ["popmanthe11"]
+      },
+      "V1": {
+        "preview": "V1",
+        "model": "MACHINE",
+        "texture": "V1",
+        "tags": ["V1"],
+        "authors": ["Attribution Needed"]
+      },
+      "V2": {
+        "preview": "V2",
+        "model": "MACHINE",
+        "texture": "V2",
+        "tags": ["V2"],
+        "authors": ["Attribution Needed"]
+      },
+      "Crystal": {
+        "preview": "crystal",
+        "model": "crystal",
+        "texture": "crystal",
+        "tags": ["Crystal"],
+        "authors": ["Attribution Needed"]
+      },
+      "nobody": {
+        "preview": "whiteguy",
+        "model": "whiteguy",
+        "texture": "whiteguy",
+        "tags": ["redacted"],
+        "authors": ["hidden"]
+      },
+      "Baby Ghast": {
+        "preview": "ghast",
+        "model": "ghast",
+        "texture": "babyghast",
+        "tags": ["redacted"],
+        "authors": ["snowboyz0825", "4J Studios"]
+      },
+      "Knight": {
+        "preview": "knight",
+        "model": "knight",
+        "texture": "knight",
+        "tags": ["Knight"],
+        "authors": ["Attribution Needed"]
+      },
+      "Knight§§": {
+        "preview": "knight2",
+        "model": "knight2",
+        "texture": "knight2",
+        "tags": ["Knight§§"],
+        "authors": ["snowboyz0825"]
+      },
+      "Eggman": {
+        "preview": "eggman",
+        "model": "eggman",
+        "texture": "eggman",
+        "tags": ["Eggman"],
+        "authors": ["Attribution Needed"]
+      },
+      "More Allays Axolotl": {
+        "preview": "axolotl_more_allays",
+        "model": "axolotl_more_allays",
+        "texture": "axolotl_more_allays",
+        "tags": ["Axolotl§M§A"],
+        "authors": ["HeroPixel Games"]
+      },
+      "More Allays Bee": {
+        "preview": "bee_more_allays",
+        "model": "bee_more_allays",
+        "texture": "bee_more_allays",
+        "tags": ["Bee§M§A"],
+        "authors": ["HeroPixel Games"]
+      },
+      "More Allays Creeper": {
+        "preview": "creeper_more_allays",
+        "model": "creeper_more_allays",
+        "texture": "creeper_more_allays",
+        "tags": ["Creeper§M§A"],
+        "authors": ["HeroPixel Games"]
+      },
+      "More Allays Enderman": {
+        "preview": "enderman_more_allays",
+        "model": "enderman_more_allays",
+        "texture": "enderman_more_allays",
+        "tags": ["Endermsn§M§A"],
+        "authors": ["HeroPixel Games"]
+      },
+      "More Allays Fox": {
+        "preview": "fox_more_allays",
+        "model": "fox_more_allays",
+        "texture": "fox_more_allays",
+        "tags": ["Fox§M§A"],
+        "authors": ["HeroPixel Games"]
+      },
+      "More Allays Frog": {
+        "preview": "frog_more_allays",
+        "model": "frog_more_allays",
+        "texture": "frog_more_allays",
+        "tags": ["Frog§M§A"],
+        "authors": ["HeroPixel Games"]
+      },
+      "More Allays Goat": {
+        "preview": "goat_more_allays",
+        "model": "goat_more_allays",
+        "texture": "goat_more_allays",
+        "tags": ["Goat§M§A"],
+        "authors": ["HeroPixel Games"]
+      },
+      "More Allays Mooshroom": {
+        "preview": "mooshroom_more_allays",
+        "model": "mooshroom_more_allays",
+        "texture": "mooshroom_more_allays",
+        "tags": ["Mooshroom§M§A"],
+        "authors": ["HeroPixel Games"]
+      },
+      "More Allays Ocelot": {
+        "preview": "ocelot_more_allays",
+        "model": "ocelot_more_allays",
+        "texture": "ocelot_more_allays",
+        "tags": ["Ocelot§M§A"],
+        "authors": ["HeroPixel Games"]
+      },
+      "More Allays Pig": {
+        "preview": "pig_more_allays",
+        "model": "pig_more_allays",
+        "texture": "pig_more_allays",
+        "tags": ["Pig§M§A"],
+        "authors": ["HeroPixel Games"]
+      },
+      "More Allays Rabbit": {
+        "preview": "rabbit_more_allays",
+        "model": "rabbit_more_allays",
+        "texture": "rabbit_more_allays",
+        "tags": ["Rabbit§M§A"],
+        "authors": ["HeroPixel Games"]
+      },
+      "More Allays Sheep": {
+        "preview": "sheep_more_allays",
+        "model": "sheep_more_allays",
+        "texture": "sheep_more_allays",
+        "tags": ["Sheep§M§A"],
+        "authors": ["HeroPixel Games"]
+      },
+      "More Allays Skeleton": {
+        "preview": "skeleton_more_allays",
+        "model": "skeleton_more_allays",
+        "texture": "skeleton_more_allays",
+        "tags": ["Skeleton§M§A"],
+        "authors": ["HeroPixel Games"]
+      },
+      "More Allays Warden": {
+        "preview": "warden_more_allays",
+        "model": "warden_more_allays",
+        "texture": "warden_more_allays",
+        "tags": ["Warden§M§A"],
+        "authors": ["HeroPixel Games"]
+      },
+      "More Allays Wither": {
+        "preview": "wither_more_allays",
+        "model": "wither_more_allays",
+        "texture": "wither_more_allays",
+        "tags": ["Wither§M§A"],
+        "authors": ["HeroPixel Games"]
+      },
+      "More Allays Zombie": {
+        "preview": "zombie_more_allays",
+        "model": "zombie_more_allays",
+        "texture": "zombie_more_allays",
+        "tags": ["Zombie§M§A"],
+        "authors": ["HeroPixel Games"]
+      },
+      "Cookie": {
+        "preview": "cookie",
+        "model": "cookie",
+        "texture": "cookie",
+        "tags": ["Cookie"],
+        "authors": ["snowboyz0825"]
+      },
+      "Sonic": {
+        "preview": "sonic",
+        "model": "sonic",
+        "texture": "sonic",
+        "tags": ["redacted"],
+        "authors": ["popmanthe11"]
+      },
+      "Tails": {
+        "preview": "tails",
+        "model": "tails",
+        "texture": "tails",
+        "tags": ["redacted"],
+        "authors": ["popmanthe11"]
+      },
+      "Translucent": {
+        "preview": "translucent",
+        "model": "translucent",
+        "texture": "translucent",
+        "tags": ["Translucent"],
+        "authors": ["snowboyz0825"]
+      },
+      "Farmer": {
+        "preview": "farmer",
+        "model": "farmer",
+        "texture": "farmer",
+        "tags": ["Farmer"],
+        "authors": ["snowboyz0825"]
+      },
+      "Balloon 0": {
+        "preview": "bloon_0",
+        "model": "bloon",
+        "texture": "bloon",
+        "tags": ["Balloon§0"],
+        "authors": ["snowboyz0825"]
+      },
+      "Balloon 1": {
+        "preview": "bloon_1",
+        "model": "bloon",
+        "texture": "bloon",
+        "tags": ["Balloon§1"],
+        "authors": ["snowboyz0825"]
+      },
+      "Balloon 2": {
+        "preview": "bloon_2",
+        "model": "bloon",
+        "texture": "bloon",
+        "tags": ["Balloon§2"],
+        "authors": ["snowboyz0825"]
+      },
+      "Balloon 3": {
+        "preview": "bloon_3",
+        "model": "bloon",
+        "texture": "bloon",
+        "tags": ["Balloon§3"],
+        "authors": ["snowboyz0825"]
+      },
+      "Balloon 4": {
+        "preview": "bloon_4",
+        "model": "bloon",
+        "texture": "bloon",
+        "tags": ["Balloon§4"],
+        "authors": ["snowboyz0825"]
+      },
+      "Balloon 5": {
+        "preview": "bloon_5",
+        "model": "bloon",
+        "texture": "bloon",
+        "tags": ["Balloon§5"],
+        "authors": ["snowboyz0825"]
+      },
+      "Balloon 6": {
+        "preview": "bloon_6",
+        "model": "bloon",
+        "texture": "bloon",
+        "tags": ["Balloon§6"],
+        "authors": ["snowboyz0825"]
+      },
+      "Balloon 7": {
+        "preview": "bloon_7",
+        "model": "bloon",
+        "texture": "bloon",
+        "tags": ["Balloon§7"],
+        "authors": ["snowboyz0825"]
+      },
+      "Balloon 8": {
+        "preview": "bloon_8",
+        "model": "bloon",
+        "texture": "bloon",
+        "tags": ["Balloon§8"],
+        "authors": ["snowboyz0825"]
+      },
+      "Balloon 9": {
+        "preview": "bloon_9",
+        "model": "bloon",
+        "texture": "bloon",
+        "tags": ["Balloon§9"],
+        "authors": ["snowboyz0825"]
+      },
+      "Balloon A": {
+        "preview": "bloon_a",
+        "model": "bloon",
+        "texture": "bloon",
+        "tags": ["Balloon§a"],
+        "authors": ["snowboyz0825"]
+      },
+      "Balloon B": {
+        "preview": "bloon_b",
+        "model": "bloon",
+        "texture": "bloon",
+        "tags": ["Balloon§b"],
+        "authors": ["snowboyz0825"]
+      },
+      "Balloon C": {
+        "preview": "bloon_c",
+        "model": "bloon",
+        "texture": "bloon",
+        "tags": ["Balloon§c"],
+        "authors": ["snowboyz0825"]
+      },
+      "Balloon D": {
+        "preview": "bloon_d",
+        "model": "bloon",
+        "texture": "bloon",
+        "tags": ["Balloon§d"],
+        "authors": ["snowboyz0825"]
+      },
+      "Balloon E": {
+        "preview": "bloon_e",
+        "model": "bloon",
+        "texture": "bloon",
+        "tags": ["Balloon§e"],
+        "authors": ["snowboyz0825"]
+      },
+      "Balloon F": {
+        "preview": "bloon_f",
+        "model": "bloon",
+        "texture": "bloon",
+        "tags": ["Balloon§f"],
+        "authors": ["snowboyz0825"]
+      },
+      "Cuphead": {
+        "preview": "cuphead",
+        "model": "cuphead",
+        "texture": "cuphead",
+        "tags": ["Cuphead"],
+        "authors": ["snowboyz0825"]
+      },
+      "Mugman": {
+        "preview": "mugman",
+        "model": "mugman",
+        "texture": "mugman",
+        "tags": ["Mugman"],
+        "authors": ["snowboyz0825"]
+      }
+    },
+    "Wolf": {
+      "Grim": {
+        "preview": "grim",
+        "model": "wolf",
+        "texture": "grim",
+        "tags": ["Grim"],
+        "authors": ["DanTDM", "w0rry"]
+      }
+    },
+    "Villager": {
+      "Dr. Trayaurus": {
+        "preview": "trayaurus",
+        "model": "trayaurus",
+        "texture": "trayaurus",
+        "tags": ["Dr. Trayaurus"],
+        "authors": ["DanTDM", "Mojang"]
+      }
+    }
+  }
+}
