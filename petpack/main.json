@@ -407,14 +407,14 @@
         "preview": "sonic",
         "model": "sonic",
         "texture": "sonic",
-        "tags": ["hidden"],
+        "tags": ["Sonic"],
         "authors": ["popmanthe11"]
       },
       "Tails": {
         "preview": "tails",
         "model": "tails",
         "texture": "tails",
-        "tags": ["hidden"],
+        "tags": ["Tails"],
         "authors": ["popmanthe11"]
       },
       "Translucent": {
