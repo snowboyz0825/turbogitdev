@@ -16,35 +16,35 @@
         "model": "dark_matter3",
         "texture": "dark_matter3",
         "tags": ["hidden"],
-        "authors": ["popmanthe"]
+        "authors": ["popmanthe64"]
       },
       "Mushroom Toppin": {
         "preview": "mushroom_toppin",
         "model": "mushroom_toppin",
         "texture": "mushroom_toppin",
         "tags": ["hidden"],
-        "authors": ["popmanthe"]
+        "authors": ["popmanthe64"]
       },
       "Dark Matter": {
         "preview": "dark_matter",
         "model": "dark_matter",
         "texture": "dark_matter",
         "tags": ["hidden"],
-        "authors": ["popmanthe"]
+        "authors": ["popmanthe64"]
       },
       "UFO§k§i§r§b§y§p§o§p": {
         "preview": "kirby_ufo",
         "model": "kirby_ufo",
         "texture": "kirby_ufo",
         "tags": ["hidden"],
-        "authors": ["popmanthe"]
+        "authors": ["popmanthe64"]
       },
       "Furnace§p§o§p": {
         "preview": "furnace",
         "model": "furnace",
         "texture": "furnace",
         "tags": ["hidden"],
-        "authors": ["popmanthe"]
+        "authors": ["popmanthe64"]
       },
       "MOAB": {
         "preview": "MOAB",
@@ -114,7 +114,7 @@
         "model": "metal_sonic",
         "texture": "metal_sonic",
         "tags": ["hidden"],
-        "authors": ["popmanthe"]
+        "authors": ["popmanthe64"]
       },
       "UFO": {
         "preview": "ufo",
@@ -556,6 +556,13 @@
         "texture": "mugman",
         "tags": ["Mugman"],
         "authors": ["snowboyz0825"]
+      },
+        "Conquest": {
+        "preview": "conquest",
+        "model": "conquest",
+        "texture": "conquest",
+        "tags": ["Conquest"],
+        "authors": ["popmanthe64"]
       }
     },
     "Wolf": {
