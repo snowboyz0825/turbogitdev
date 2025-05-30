@@ -563,6 +563,20 @@
         "texture": "conquest",
         "tags": ["Conquest"],
         "authors": ["popmanthe64"]
+      },
+              "Sonic (From Sonic 1)": {
+        "preview": "sonic_the_hedgehog_1",
+        "model": "sonic_the_hedgehog_1",
+        "texture": "sonic_the_hedgehog_1",
+        "tags": ["hidden"],
+        "authors": ["popmanthe64"]
+      },
+              "Tails (From Sonic 1)": {
+        "preview": "tails_sonic_the_hedgehog_1",
+        "model": "tails_sonic_the_hedgehog_1",
+        "texture": "tails_sonic_the_hedgehog_1",
+        "tags": ["hidden"],
+        "authors": ["popmanthe64"]
       }
     },
     "Wolf": {
