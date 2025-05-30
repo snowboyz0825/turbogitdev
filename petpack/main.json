@@ -183,14 +183,14 @@
         "preview": "eggmanclassic",
         "model": "eggmanclassic",
         "texture": "eggmanclassic",
-        "tags": ["redacted"],
+        "tags": ["hidden"],
         "authors": ["popmanthe11"]
       },
       "Eggy King": {
         "preview": "eggyking",
         "model": "eggyking",
         "texture": "eggyking",
-        "tags": ["Event Reward (redacted)"],
+        "tags": ["Event Reward (hidden)"],
         "authors": ["snowboyz0825"]
       },
       "Glow Pikmin": {
@@ -225,7 +225,7 @@
         "preview": "stewie",
         "model": "stewie",
         "texture": "stewie",
-        "tags": ["redacted"],
+        "tags": ["hidden"],
         "authors": ["popmanthe11"]
       },
       "V1": {
@@ -253,14 +253,14 @@
         "preview": "whiteguy",
         "model": "whiteguy",
         "texture": "whiteguy",
-        "tags": ["redacted"],
+        "tags": ["hidden"],
         "authors": ["hidden"]
       },
       "Baby Ghast": {
         "preview": "ghast",
         "model": "ghast",
         "texture": "babyghast",
-        "tags": ["redacted"],
+        "tags": ["hidden"],
         "authors": ["snowboyz0825", "4J Studios"]
       },
       "Knight": {
@@ -407,14 +407,14 @@
         "preview": "sonic",
         "model": "sonic",
         "texture": "sonic",
-        "tags": ["redacted"],
+        "tags": ["hidden"],
         "authors": ["popmanthe11"]
       },
       "Tails": {
         "preview": "tails",
         "model": "tails",
         "texture": "tails",
-        "tags": ["redacted"],
+        "tags": ["hidden"],
         "authors": ["popmanthe11"]
       },
       "Translucent": {
