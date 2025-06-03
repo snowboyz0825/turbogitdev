@@ -557,24 +557,38 @@
         "tags": ["Mugman"],
         "authors": ["snowboyz0825"]
       },
-        "Conquest": {
+      "Conquest": {
         "preview": "conquest",
         "model": "conquest",
         "texture": "conquest",
         "tags": ["Conquest"],
         "authors": ["popmanthe64"]
       },
-              "Sonic (From Sonic 1)": {
+      "Sonic (From Sonic 1)": {
         "preview": "sonic_the_hedgehog_1",
         "model": "sonic_the_hedgehog_1",
         "texture": "sonic_the_hedgehog_1",
         "tags": ["hidden"],
         "authors": ["popmanthe64"]
       },
-              "Tails (From Sonic 1)": {
+      "Tails (From Sonic 1)": {
         "preview": "tails_sonic_the_hedgehog_1",
         "model": "tails_sonic_the_hedgehog_1",
         "texture": "tails_sonic_the_hedgehog_1",
+        "tags": ["hidden"],
+        "authors": ["popmanthe64"]
+      },
+      "Major Sweetie": {
+        "preview": "major_sweetie",
+        "model": "major_sweetie",
+        "texture": "major_sweetie",
+        "tags": ["hidden"],
+        "authors": ["popmanthe64"]
+      },
+      "Bary": {
+        "preview": "barry",
+        "model": "barry_jet_pack_joyride",
+        "texture": "barry_jet_pack_joyride",
         "tags": ["hidden"],
         "authors": ["popmanthe64"]
       }
