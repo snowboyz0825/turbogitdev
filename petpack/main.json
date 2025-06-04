@@ -600,49 +600,49 @@
         "authors": ["Gills"]
       },
       "Green Knight (From Castle Crashers": {
-        "preview": "green_knight_castle_crashers",
+        "preview": "castle_crashers_green_knight",
         "model": "castle_crashers_knight",
         "texture": "green_knight_castle_crashers",
         "tags": ["Green Knight"],
         "authors": ["snowboyz0825"]
       },
       "Blue Knight (From Castle Crashers": {
-        "preview": "blue_knight_castle_crashers",
+        "preview": "castle_crashers_blue_knight",
         "model": "castle_crashers_knight",
         "texture": "blue_knight_castle_crashers",
         "tags": ["Blue Knight"],
         "authors": ["snowboyz0825"]
       },
       "Red Knight (From Castle Crashers": {
-        "preview": "red_knight_castle_crashers",
+        "preview": "castle_crashers_red_knight",
         "model": "castle_crashers_knight",
         "texture": "red_knight_castle_crashers",
         "tags": ["Red Knight"],
         "authors": ["snowboyz0825"]
       },
       "Orange Knight (From Castle Crashers": {
-        "preview": "orange_knight_castle_crashers",
+        "preview": "castle_crashers_orange_knight",
         "model": "castle_crashers_knight",
         "texture": "orange_knight_castle_crashers",
         "tags": ["Orange Knight"],
         "authors": ["snowboyz0825"]
       },
       "Gray Knight (From Castle Crashers": {
-        "preview": "gray_knight_castle_crashers",
+        "preview": "castle_crashers_gray_knight",
         "model": "castle_crashers_knight",
         "texture": "gray_knight_castle_crashers",
         "tags": ["Gray Knight"],
         "authors": ["snowboyz0825"]
       },
       "Pink Knight (From Castle Crashers": {
-        "preview": "pink_knight_castle_crashers",
+        "preview": "castle_crashers_pink_knight",
         "model": "castle_crashers_knight",
         "texture": "pink_knight_castle_crashers",
         "tags": ["Pink Knight"],
         "authors": ["snowboyz0825"]
       },
       "The Blacksmith (From Castle Crashers": {
-        "preview": "blacksmith_castle_crashers",
+        "preview": "castle_crashers_blacksmith",
         "model": "castle_crashers_knight",
         "texture": "blacksmith_castle_crashers",
         "tags": ["The Blacksmith"],
