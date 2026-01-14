@@ -142,8 +142,7 @@
                     //item creation
                     var newDiv = document.createElement('div')
                     newDiv.classList.add("item")
-                    newDiv.dataset.id = id;
-                    newDiv.dataset.img_src = "previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.png";
+                    newDiv.dataset.img_src = `previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.png`;
                     newDiv.innerHTML = `<img src="${newDiv.dataset.img_src}"><p class="imgdesc">${title}</p>`
                 } else {
                     // if there isn't a subcategory
@@ -157,7 +156,8 @@
                     var newDiv = document.createElement('div')
                     newDiv.dataset.id = id;
                     newDiv.classList.add("item")
-                    newDiv.innerHTML = `<img src="previews/${shortCategories[scx] + "/" + id + ".png"}"><p class="imgdesc">${title}</p>`
+                    newDiv.dataset.img_src = `previews/${shortCategories[scx]}/${id}.png`
+                    newDiv.innerHTML = `<img src="${newDiv.dataset.img_src}"><p class="imgdesc">${title}</p>`
                 }
                 maingrid.appendChild(newDiv);
                 document.body.appendChild(maingrid)
