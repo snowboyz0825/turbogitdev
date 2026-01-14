@@ -3,7 +3,7 @@
 
 <head>
     <title>Name II Pet Pack</title>
-        <style>
+    <style>
         body {
             background-color: #070e12;
         }
@@ -50,6 +50,7 @@
             padding: 0 12px 12px 12px;
             border-radius: 12px;
         }
+
         .heading,
         .subheading {
             text-align: center;
@@ -65,7 +66,7 @@
         .modal-desc {
             line-height: 1.6;
             align-self: flex-start;
-            padding: 6px;
+            margin: 6px;
         }
 
         .modal-image {
@@ -140,7 +141,8 @@
                     }
                     //item creation
                     var newDiv = document.createElement('div')
-                    newDiv.classList.add("item", id)
+                    newDiv.classList.add("item")
+                    newDiv.dataset.id = id;
                     newDiv.innerHTML = `<img src="previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.png"><p class="imgdesc">${title}</p>`
                 } else {
                     // if there isn't a subcategory
@@ -152,7 +154,8 @@
                     }
                     //item creation
                     var newDiv = document.createElement('div')
-                    newDiv.classList.add("item", id)
+                    newDiv.dataset.id = id;
+                    newDiv.classList.add("item")
                     newDiv.innerHTML = `<img src="previews/${shortCategories[scx] + "/" + id + ".png"}"><p class="imgdesc">${title}</p>`
                 }
                 maingrid.appendChild(newDiv);
