@@ -34,9 +34,9 @@
             flex-wrap: wrap;
             justify-content: center;
         }
-
         .modal {
-            display: flex;
+            /*change the display to flex once the modal is shown*/
+            display: none;
             position: fixed;
             inset: 0;
             justify-content: center;
@@ -78,6 +78,7 @@
             padding-right: 12px;
             align-self: flex-end;
             font-size: 18pt;
+            cursor: pointer;
         }
 
         .modal-content {
@@ -121,7 +122,7 @@
             shortCategories.forEach(item => {
                 scx++
                 //console.log("."+ shortCategories[scx])
-                // if the category does not exist, we create one
+                // if the category does not exist, we create onesa
                 if (!document.querySelector("." + shortCategories[scx] + ".heading")) {
 
                     let newH2 = document.createElement('h1')
