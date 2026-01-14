@@ -66,7 +66,7 @@
                 scx++
                 //console.log("."+ shortCategories[scx])
                 // if the category does not exist, we create one
-                if (!document.querySelector("." + shortCategories[scx])) {
+                if (!document.querySelector("." + shortCategories[scx] + ".heading")) {
 
                     let newH2 = document.createElement('h1')
                     newH2.classList.add(shortCategories[scx], "heading")
@@ -76,11 +76,15 @@
                 }
                 if (shortsCategories[0]) {
                     // if there is a subcatregory
-                    let newH4 = document.createElement('h4')
-                    newH4.classList.add(shortsCategories[scx], "subheading")
-                    newH4.innerHTML = longsCategories[scx]
-                    console.log(newH4.outerHTML)
-                    document.body.appendChild(newH4)
+                    //we check if it exists
+                    if (!document.querySelector("." + shortsCategories[scx] + ".subheading")) {
+                        //if it doesn't we make one
+                        let newH4 = document.createElement('h4')
+                        newH4.classList.add(shortsCategories[scx], "subheading")
+                        newH4.innerHTML = longsCategories[scx]
+                        console.log(newH4.outerHTML)
+                        document.body.appendChild(newH4)
+                    }
                     //grid creation
                     var maingrid = document.querySelector("." + shortsCategories[scx] + ".maingrid")
                     //if there isn't a maingrid of the correct class
@@ -91,7 +95,7 @@
                     //item creation
                     var newDiv = document.createElement('div')
                     newDiv.classList.add("item")
-                    newDiv.innerHTML = `<img src="previews/${shortsCategories[scx]}/${shortCategories[scx]}/${id}.png"><p class="imgdesc">${title}</p>`
+                    newDiv.innerHTML = `<img src="previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.png"><p class="imgdesc">${title}</p>`
                 } else {
                     // if there isn't a subcategory
                     var maingrid = document.querySelector("." + shortCategories[scx] + ".maingrid")
@@ -110,7 +114,8 @@
                 //console.log(document.body.innerHTML)
                 //console.log(document.head.innerHTML)
             }
-        )})
+            )
+        })
         //    console.log(longCategories)
         //    console.log(shortCategories)
     };
