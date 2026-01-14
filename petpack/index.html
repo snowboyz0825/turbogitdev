@@ -3,21 +3,17 @@
 
 <head>
     <title>Name II Pet Pack</title>
-    <style>
+        <style>
         body {
             background-color: #070e12;
         }
 
         .heading {
-            text-align: center;
             font-size: 30pt;
-            font-weight: normal;
         }
 
         .subheading {
-            text-align: center;
             font-size: 24pt;
-            font-weight: normal;
         }
 
         * {
@@ -37,6 +33,56 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+        }
+
+        .modal {
+            display: flex;
+            position: fixed;
+            inset: 0;
+            justify-content: center;
+            margin: auto;
+            background-color: #05090c;
+            border: 3.5px solid #020506;
+            align-items: center;
+            flex-direction: column;
+            width: fit-content;
+            height: fit-content;
+            padding: 0 12px 12px 12px;
+            border-radius: 12px;
+        }
+        .heading,
+        .subheading {
+            text-align: center;
+            font-weight: normal;
+        }
+
+        .modal-title {
+            font-size: 24px;
+            font-weight: normal;
+            margin-top: 6px;
+        }
+
+        .modal-desc {
+            line-height: 1.6;
+            align-self: flex-start;
+            padding: 6px;
+        }
+
+        .modal-image {
+            padding: 12px;
+        }
+
+        .modal-x {
+            margin-top: 12px;
+            padding-right: 12px;
+            align-self: flex-end;
+            font-size: 18pt;
+        }
+
+        .modal-content {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 0;
         }
     </style>
 </head>
@@ -94,7 +140,7 @@
                     }
                     //item creation
                     var newDiv = document.createElement('div')
-                    newDiv.classList.add("item")
+                    newDiv.classList.add("item", id)
                     newDiv.innerHTML = `<img src="previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.png"><p class="imgdesc">${title}</p>`
                 } else {
                     // if there isn't a subcategory
@@ -106,7 +152,7 @@
                     }
                     //item creation
                     var newDiv = document.createElement('div')
-                    newDiv.classList.add("item")
+                    newDiv.classList.add("item", id)
                     newDiv.innerHTML = `<img src="previews/${shortCategories[scx] + "/" + id + ".png"}"><p class="imgdesc">${title}</p>`
                 }
                 maingrid.appendChild(newDiv);
