@@ -96,7 +96,7 @@
             margin-top: 0;
         }
 
-        .modal_back{
+        .modal_back {
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.25);
@@ -105,14 +105,18 @@
 </head>
 
 <body>
-    <div class="modal_hide modal_hideable modal">
-    <div class="modal_back"></div>
-        <h3 class="modal-x">&times;</h3>
-        <h4 class="modal-title">Allay Popsicle</h4>
-        <div class="modal-content"><img class="modal-image" src="">
-            <p class="modal-desc">Creator: sally_5808<br>
-                Category: Allays Doing Things<br>
-                Name Tag: Allay Popsicle</p>
+    <div class="modal_hideable modal_hide">
+        <div class="modal_back">
+            <div class=" modal">
+                <h3 class="modal-x">&times;</h3>
+                <h4 class="modal-title">Allay Popsicle</h4>
+                <div class="modal-content">
+                    <img class="modal-image" src="">
+                    <p class="modal-desc">Creator: sally_5808<br>
+                        Category: Allays Doing Things<br>
+                        Name Tag: Allay Popsicle</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
@@ -203,9 +207,9 @@
     };
     populate();
     function closeModal() {
-            const modal = document.querySelector(".modal_hideable")
-            modal.classList.remove("modal_shown")
-            modal.classList.add("modal_hide")
+        const modal = document.querySelector(".modal_hideable")
+        modal.classList.remove("modal_shown")
+        modal.classList.add("modal_hide")
     }
     //modal logic
     function event_temp(newDiv, title, id) {
