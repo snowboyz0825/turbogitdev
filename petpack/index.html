@@ -128,11 +128,16 @@
 <script>
     function initialize() {
         const modalX = document.querySelector(".modal-x")
+        const modalBack = document.querySelector(".modal_back")
         modalX.addEventListener("click", () => {
+            closeModal()
+        })
+        modalBack.addEventListener("click", () => {
             closeModal()
         })
     }
     initialize()
+    populate();
     async function populate() {
         var x = -1
         const temp = await fetch("allays.json");
@@ -208,7 +213,7 @@
         //    console.log(longCategories)
         //    console.log(shortCategories)
     };
-    populate();
+
     function closeModal() {
         const modal = document.querySelector(".modal")
         modal.classList.remove("modal_shown")
