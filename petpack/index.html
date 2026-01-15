@@ -203,7 +203,7 @@
     };
     populate();
     function closeModal() {
-            const modal = document.querySelector(".modal_hideable")
+            const modal = document.querySelectorAll(".modal_hideable")
             modal.classList.remove("modal_shown")
             modal.classList.add("modal_hide")
     }
@@ -211,7 +211,7 @@
     function event_temp(newDiv, title, id) {
         newDiv.addEventListener("click", () => {
             console.log("Clicked item:", title, id);
-            const modal = document.querySelector(".modal_hideable")
+            const modal = document.querySelectorAll(".modal_hideable")
             modal.classList.remove("modal_hide")
             modal.classList.add("modal_shown")
         });
