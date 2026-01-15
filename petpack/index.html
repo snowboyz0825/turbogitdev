@@ -181,11 +181,11 @@
                     newDiv.dataset.img_src = `previews/${shortCategories[scx]}/${id}.png`
                     newDiv.innerHTML = `<img src="${newDiv.dataset.img_src}"><p class="imgdesc">${title}</p>`
                     event_temp(newDiv, title, id)
-                    maingrid.appendChild(newDiv);
-                    document.body.appendChild(maingrid)
                     //console.log(document.body.innerHTML)
                     //console.log(document.head.innerHTML)
                 }
+                maingrid.appendChild(newDiv);
+                document.body.appendChild(maingrid)
             })
         })
         //    console.log(longCategories)
