@@ -235,6 +235,7 @@
     //modal logic
     function event_temp(newDiv, title, id, imgSrc) {
         newDiv.addEventListener("click", () => {
+            setModalLayout()
             console.log("Clicked item:", title, id);
             const modal = document.querySelector(".modal")
             modal.classList.remove("modal_hide")
@@ -247,7 +248,7 @@
         });
     }
     //changes modal based on width/height
-    window.addEventListener('resize', () => {
+    function setModalLayout() {
         const modalContent = document.querySelector(".modal-content")
         const modaldesc = document.querySelector(".modal-desc")
         if (window.innerHeight > window.innerWidth) {
@@ -259,8 +260,9 @@
             modalContent.classList.remove("modal-content-portrait")
             modalContent.classList.add("modal-content")
             modaldesc.classList.remove("modal-desc-portrait")
-            modaldesc.classList.add("modal-desc") }
-    })
+            modaldesc.classList.add("modal-desc")
+        }
+    }
 </script>
 
 </html>
