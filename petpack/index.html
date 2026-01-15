@@ -34,9 +34,9 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+
         .modal {
-            /*change the display to flex once the modal is shown*/
-            display: none;
+
             position: fixed;
             inset: 0;
             justify-content: center;
@@ -49,6 +49,15 @@
             height: fit-content;
             padding: 0 12px 12px 12px;
             border-radius: 12px;
+        }
+
+        /*change the display to flex once the modal is shown*/
+        .modal_hide {
+            display: none;
+        }
+
+        .modal_shown {
+            display: flex;
         }
 
         .heading,
@@ -89,16 +98,17 @@
     </style>
 </head>
 
-<body> <div class="modal">
+<body>
+    <div class="modal">
         <h3 class="modal-x">&times;</h3>
         <h4 class="modal-title">Allay Popsicle</h4>
-        <div class="modal-content"><img class="modal-image"
-                src="">
+        <div class="modal-content"><img class="modal-image" src="">
             <p class="modal-desc">Creator: sally_5808<br>
                 Category: Allays Doing Things<br>
                 Name Tag: Allay Popsicle</p>
         </div>
-    </div></body>
+    </div>
+</body>
 <script>
     var x = -1
     async function populate() {
@@ -154,6 +164,8 @@
                     newDiv.classList.add("item")
                     newDiv.dataset.img_src = `previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.png`;
                     newDiv.innerHTML = `<img src="${newDiv.dataset.img_src}"><p class="imgdesc">${title}</p>`
+                    event_temp()
+
                 } else {
                     // if there isn't a subcategory
                     var maingrid = document.querySelector("." + shortCategories[scx] + ".maingrid")
@@ -168,18 +180,25 @@
                     newDiv.classList.add("item")
                     newDiv.dataset.img_src = `previews/${shortCategories[scx]}/${id}.png`
                     newDiv.innerHTML = `<img src="${newDiv.dataset.img_src}"><p class="imgdesc">${title}</p>`
+                    event_temp()
+                    maingrid.appendChild(newDiv);
+                    document.body.appendChild(maingrid)
+                    //console.log(document.body.innerHTML)
+                    //console.log(document.head.innerHTML)
                 }
-                maingrid.appendChild(newDiv);
-                document.body.appendChild(maingrid)
-                //console.log(document.body.innerHTML)
-                //console.log(document.head.innerHTML)
-            }
-            )
+            })
         })
         //    console.log(longCategories)
         //    console.log(shortCategories)
     };
     populate();
+    function event_temp() {
+        newDiv.addEventListener("click", () => {
+            console.log("Clicked item:", title, id);
+
+            alert("You clicked: " + title);
+        });
+    }
 </script>
 
 </html>
