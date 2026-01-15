@@ -31,6 +31,11 @@
             cursor: pointer;
         }
 
+        .item_image {
+            width: 256px;
+            height: 256px;
+        }
+
         .maingrid {
             display: flex;
             flex-wrap: wrap;
@@ -97,11 +102,12 @@
             align-items: flex-start;
             margin-top: 0;
         }
-        .modal_back{
+
+        .modal_back {
             position: fixed;
             width: 100vw;
             height: 100vh;
-            background-color: rgba(0,0,0,0.5);
+            background-color: rgba(0, 0, 0, 0.5);
             z-index: -1;
         }
     </style>
@@ -175,7 +181,7 @@
                     //item creation
                     var newDiv = document.createElement('div')
                     newDiv.classList.add("item")
-                    newDiv.innerHTML = `<img src="previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.png"><p class="imgdesc">${title}</p>`
+                    newDiv.innerHTML = `<img class="item_image" loading="lazy" src="previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.png"><p class="imgdesc">${title}</p>`
                     event_temp(newDiv, title, id, `previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.png`)
 
                 } else {
@@ -190,7 +196,7 @@
                     var newDiv = document.createElement('div')
                     newDiv.dataset.id = id;
                     newDiv.classList.add("item")
-                    newDiv.innerHTML = `<img src="previews/${shortCategories[scx]}/${id}.png"><p class="imgdesc">${title}</p>`
+                    newDiv.innerHTML = `<img class="item_image" loading="lazy" src="previews/${shortCategories[scx]}/${id}.png"><p class="imgdesc">${title}</p>`
                     event_temp(newDiv, title, id, `previews/${shortCategories[scx]}/${id}.png`)
                     //console.log(document.body.innerHTML)
                     //console.log(document.head.innerHTML)
@@ -204,9 +210,9 @@
     };
     populate();
     function closeModal() {
-            const modal = document.querySelector(".modal")
-            modal.classList.remove("modal_shown")
-            modal.classList.add("modal_hide")
+        const modal = document.querySelector(".modal")
+        modal.classList.remove("modal_shown")
+        modal.classList.add("modal_hide")
     }
     //modal logic
     function event_temp(newDiv, title, id, imgSrc) {
@@ -219,7 +225,7 @@
             const modalImage = document.querySelector(".modal-image")
             modalTitle.textContent = title
             modalImage.src = imgSrc
-            
+
         });
     }
 </script>
