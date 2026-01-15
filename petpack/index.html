@@ -148,6 +148,11 @@
         modalBack.addEventListener("click", () => {
             closeModal()
         })
+        modalBack.addEventListener("keydown", () => {
+            if (e.key === "Escape") {
+                closeModal()
+            }
+        })
     }
     initialize()
     populate();
@@ -247,6 +252,7 @@
 
         });
     }
+
     //changes modal based on width/height
     function setModalLayout() {
         const modalContent = document.querySelector(".modal-content")
