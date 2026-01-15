@@ -105,8 +105,8 @@
 </head>
 
 <body>
-    <div class="modal_back modal_hide"></div>
-    <div class="modal_hide modal">
+    <div class="modal_back modal_hideable modal_hide"></div>
+    <div class="modal_hide modal_hideable modal">
         <h3 class="modal-x">&times;</h3>
         <h4 class="modal-title">Allay Popsicle</h4>
         <div class="modal-content"><img class="modal-image" src="">
@@ -203,7 +203,7 @@
     };
     populate();
     function closeModal() {
-            const modal = document.querySelector(".modal")
+            const modal = document.querySelector(".modal_hideable")
             modal.classList.remove("modal_shown")
             modal.classList.add("modal_hide")
     }
