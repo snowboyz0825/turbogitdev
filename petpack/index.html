@@ -27,6 +27,7 @@
 
         .item {
             width: 256px;
+            cursor: pointer;
         }
 
         .maingrid {
@@ -110,7 +111,16 @@
     </div>
 </body>
 <script>
-    var x = -1
+    function initialize() {
+        var x = -1
+        const closeModal = document.querySelector("modal-x")
+        closeModal.addEventListener("click", () => {
+            const modal = document.querySelector("modal")
+            modal.classList.remove("modal_shown")
+            modal.classList.add("modal_hide")
+        })
+    }
+    initialize()
     async function populate() {
         const temp = await fetch("allays.json");
         const references = await temp.json();
@@ -192,11 +202,15 @@
         //    console.log(shortCategories)
     };
     populate();
+    function closeModal() {
+    }
+    //modal logic
     function event_temp(newDiv, title, id) {
         newDiv.addEventListener("click", () => {
             console.log("Clicked item:", title, id);
-
-            alert("You clicked: " + title);
+            const modal = document.querySelector("modal")
+            modal.classList.remove("modal_hide")
+            modal.classList.add("modal_shown")
         });
     }
 </script>
