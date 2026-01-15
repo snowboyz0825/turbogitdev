@@ -85,6 +85,12 @@
             margin: 6px;
         }
 
+        .modal-desc-portait {
+            line-height: 1.6;
+            text-align: center;
+            padding: 6px;
+        }
+
         .modal-image {
             padding: 12px;
         }
@@ -101,6 +107,13 @@
             display: flex;
             align-items: flex-start;
             margin-top: 0;
+        }
+
+        .modal-content-portrait {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0;
+
         }
 
         .modal_back {
@@ -233,6 +246,21 @@
 
         });
     }
+    //changes modal based on width/height
+    window.addEventListener('resize', () => {
+        const modalContent = document.querySelector(".modal-content")
+        const modaldesc = document.querySelector(".modal-desc")
+        if (window.innerHeight > window.innerWidth) {
+            modalContent.classList.remove("modal-content")
+            modalContent.classList.add("modal-content-portrait")
+            modaldesc.classList.remove("modal-desc")
+            modaldesc.classList.add("modal-desc-portrait")
+        } else {
+            modalContent.classList.remove("modal-content-portrait")
+            modalContent.classList.add("modal-content")
+            modaldesc.classList.remove("modal-desc-portrait")
+            modaldesc.classList.add("modal-desc") }
+    })
 </script>
 
 </html>
