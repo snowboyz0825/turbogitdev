@@ -118,8 +118,8 @@
 
         .modal_back {
             position: fixed;
-            width: 100vw;
-            height: 100vh;
+            width: 200vw;
+            height: 200vh;
             background-color: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
@@ -148,8 +148,8 @@
         modalBack.addEventListener("click", () => {
             closeModal()
         })
-        document.addEventListener("keydown", () => {
-            if (e.key === "Escape") {
+        document.addEventListener("keydown", (keypressed) => {
+            if (keypressed.key === "Escape") {
                 closeModal()
             }
         })
