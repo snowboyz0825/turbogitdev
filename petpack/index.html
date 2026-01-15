@@ -100,7 +100,7 @@
 </head>
 
 <body>
-    <div class="modal_hide">
+    <div class="modal_hide modal">
         <h3 class="modal-x">&times;</h3>
         <h4 class="modal-title">Allay Popsicle</h4>
         <div class="modal-content"><img class="modal-image" src="">
@@ -132,14 +132,10 @@
             let shortsCategories = (references[x]).subcategories_short
             let id = references[x].id
             let title = references[x].title
-            //console.log(id)
-            //console.log(longCategories)
-            //console.log(shortCategories)
 
             let scx = -1
             shortCategories.forEach(item => {
                 scx++
-                //console.log("."+ shortCategories[scx])
                 // if the category does not exist, we create onesa
                 if (!document.querySelector("." + shortCategories[scx] + ".heading")) {
 
