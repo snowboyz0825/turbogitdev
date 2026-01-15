@@ -245,6 +245,9 @@
         newDiv.addEventListener("click", () => {
             setModalLayout()
             console.log("Clicked item:", title, id);
+            const params = new URLSearchParams({
+                item: 5,
+            });
             params.set("item", "99");
             const modal = document.querySelector(".modal")
             modal.classList.remove("modal_hide")
