@@ -99,7 +99,7 @@
         .modal_back{
             position: fixed;
             width: 100vw;
-            height: 100vw;
+            height: 100vh;
             background-color: rgba(0,0,0,0.5);
             z-index: -1;
         }
@@ -174,7 +174,7 @@
                     //item creation
                     var newDiv = document.createElement('div')
                     newDiv.classList.add("item")
-                    newDiv.innerHTML = `<img src="${newDiv.dataset.img_src}"><p class="imgdesc">${title}</p>`
+                    newDiv.innerHTML = `<img src="previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.png"><p class="imgdesc">${title}</p>`
                     event_temp(newDiv, title, id, `previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.png`)
 
                 } else {
@@ -189,7 +189,7 @@
                     var newDiv = document.createElement('div')
                     newDiv.dataset.id = id;
                     newDiv.classList.add("item")
-                    newDiv.innerHTML = `<img src="${newDiv.dataset.img_src}"><p class="imgdesc">${title}</p>`
+                    newDiv.innerHTML = `<img src="previews/${shortCategories[scx]}/${id}.png"><p class="imgdesc">${title}</p>`
                     event_temp(newDiv, title, id, `previews/${shortCategories[scx]}/${id}.png`)
                     //console.log(document.body.innerHTML)
                     //console.log(document.head.innerHTML)
