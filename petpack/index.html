@@ -211,7 +211,7 @@
     function event_temp(newDiv, title, id) {
         newDiv.addEventListener("click", () => {
             console.log("Clicked item:", title, id);
-            const modal = document.querySelector(".modal")
+            const modal = document.querySelector(".modal_hideable")
             modal.classList.remove("modal_hide")
             modal.classList.add("modal_shown")
         });
