@@ -113,11 +113,9 @@
 <script>
     function initialize() {
         var x = -1
-        const closeModal = document.querySelector("modal-x")
-        closeModal.addEventListener("click", () => {
-            const modal = document.querySelector("modal")
-            modal.classList.remove("modal_shown")
-            modal.classList.add("modal_hide")
+        const modalX = document.querySelector(".modal-x")
+        modalX.addEventListener("click", () => {
+            closeModal()
         })
     }
     initialize()
@@ -203,6 +201,9 @@
     };
     populate();
     function closeModal() {
+            const modal = document.querySelector(".modal")
+            modal.classList.remove("modal_shown")
+            modal.classList.add("modal_hide")
     }
     //modal logic
     function event_temp(newDiv, title, id) {
