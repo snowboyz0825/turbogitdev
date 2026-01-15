@@ -1,0 +1,75 @@
+.modal-title {
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 6px;
+}
+
+.modal-desc {
+    line-height: 1.6;
+    align-self: flex-start;
+    margin: 6px;
+}
+
+.modal-desc.portrait {
+    line-height: 1.6;
+    text-align: center;
+    padding: 6px;
+}
+
+.modal-image {
+    padding: 12px;
+}
+
+.modal-x {
+    margin-top: 12px;
+    padding-right: 12px;
+    align-self: flex-end;
+    font-size: 18pt;
+    cursor: pointer;
+}
+
+.modal-content {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.modal-content.portrait {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+
+}
+
+.modal_back {
+    position: fixed;
+    width: 200vw;
+    height: 200vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal {
+    z-index: 1000;
+    position: fixed;
+    inset: 0;
+    justify-content: center;
+    margin: auto;
+    background-color: #05090c;
+    border: 3.5px solid #020506;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 12px 12px 12px;
+    border-radius: 12px;
+}
+
+/*change the display to flex once the modal is shown*/
+.modal_hide {
+    display: none;
+}
+
+.modal_shown {
+    display: flex;
+}
