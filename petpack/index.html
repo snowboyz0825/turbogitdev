@@ -57,6 +57,7 @@
             padding: 0 12px 12px 12px;
             border-radius: 12px;
         }
+
         /*change the display to flex once the modal is shown*/
         .modal_hide {
             display: none;
@@ -126,8 +127,8 @@
 </head>
 
 <body>
+    <div class="modal_back"></div>
     <div class="modal_hide modal">
-        <div class="modal_back"></div>
         <h3 class="modal-x">&times;</h3>
         <h4 class="modal-title"></h4>
         <div class="modal-content"><img class="modal-image">
@@ -235,6 +236,9 @@
         const modal = document.querySelector(".modal")
         modal.classList.remove("modal_shown")
         modal.classList.add("modal_hide")
+        const modalBack = document.querySelector(".modal_back")
+        modal.classList.remove("modal_shown")
+        modal.classList.add("modal_hide")
     }
     //modal logic
     function event_temp(newDiv, title, id, imgSrc) {
@@ -244,6 +248,9 @@
             const modal = document.querySelector(".modal")
             modal.classList.remove("modal_hide")
             modal.classList.add("modal_shown")
+            const modalBack = document.querySelector(".modal_back")
+            modal.classList.remove("modal_shown")
+            modal.classList.add("modal_hide")
             const modalTitle = document.querySelector(".modal-title")
             const modalImage = document.querySelector(".modal-image")
             modalTitle.textContent = title
