@@ -132,6 +132,7 @@
         <h3 class="modal-x">&times;</h3>
         <h4 class="modal-title"></h4>
         <div class="modal-content"><img class="modal-image">
+                <p class="modal-desc"></p>
         </div>
     </div>
 </body>
@@ -244,7 +245,6 @@
     //modal logic
     function event_temp(newDiv, title, id, imgSrc, desc) {
         newDiv.addEventListener("click", () => {
-            setModalLayout()
             console.log("Clicked item:", title, id);
             const params = new URLSearchParams({
                 item: 5,
@@ -261,7 +261,7 @@
             const modalImage = document.querySelector(".modal-image")
             modalTitle.textContent = title
             modalImage.src = imgSrc
-
+            setModalLayout()
         });
     }
 
