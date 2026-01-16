@@ -132,9 +132,6 @@
         <h3 class="modal-x">&times;</h3>
         <h4 class="modal-title"></h4>
         <div class="modal-content"><img class="modal-image">
-            <p class="modal-desc">Creator: sally_5808<br>
-                Category: Allays Doing Things<br>
-                Name Tag: Allay Popsicle</p>
         </div>
     </div>
 </body>
@@ -170,6 +167,7 @@
             let shortsCategories = (references[x]).subcategories_short
             let id = references[x].id
             let title = references[x].title
+            let desc = references[x].desc
 
             let scx = -1
             shortCategories.forEach(item => {
@@ -204,8 +202,8 @@
                     //item creation
                     var newDiv = document.createElement('div')
                     newDiv.classList.add("item")
-                    newDiv.innerHTML = `<img class="item_image" loading="lazy" src="previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.png"><p class="imgdesc">${title}</p>`
-                    event_temp(newDiv, title, id, `previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.png`)
+                    newDiv.innerHTML = `<img class="item_image" loading="lazy" src="previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.webp"><p class="imgdesc">${title}</p>`
+                    event_temp(newDiv, title, id, `previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.png`, desc)
 
                 } else {
                     // if there isn't a subcategory
@@ -219,8 +217,8 @@
                     var newDiv = document.createElement('div')
                     newDiv.dataset.id = id;
                     newDiv.classList.add("item")
-                    newDiv.innerHTML = `<img class="item_image" loading="lazy" src="previews/${shortCategories[scx]}/${id}.png"><p class="imgdesc">${title}</p>`
-                    event_temp(newDiv, title, id, `previews/${shortCategories[scx]}/${id}.png`)
+                    newDiv.innerHTML = `<img class="item_image" loading="lazy" src="previews/${shortCategories[scx]}/${id}.webp"><p class="imgdesc">${title}</p>`
+                    event_temp(newDiv, title, id, `previews/${shortCategories[scx]}/${id}.png`, desc)
                     //console.log(document.body.innerHTML)
                     //console.log(document.head.innerHTML)
                 }
@@ -241,7 +239,7 @@
         modalBack.classList.add("modal_hide")
     }
     //modal logic
-    function event_temp(newDiv, title, id, imgSrc) {
+    function event_temp(newDiv, title, id, imgSrc, desc) {
         newDiv.addEventListener("click", () => {
             setModalLayout()
             console.log("Clicked item:", title, id);
@@ -250,6 +248,7 @@
             });
             params.set("item", "99");
             const modal = document.querySelector(".modal")
+            modal.appendChild(desc)
             modal.classList.remove("modal_hide")
             modal.classList.add("modal_shown")
             const modalBack = document.querySelector(".modal_back")
