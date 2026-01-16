@@ -168,6 +168,7 @@
             let id = references[x].id
             let title = references[x].title
             let desc = references[x].desc
+            let entity = referenced[x].entity
 
             let scx = -1
             shortCategories.forEach(item => {
@@ -203,7 +204,7 @@
                     var newDiv = document.createElement('div')
                     newDiv.classList.add("item")
                     newDiv.innerHTML = `<img class="item_image" loading="lazy" src="previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.webp"><p class="imgdesc">${title}</p>`
-                    event_temp(newDiv, title, id, `previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.png`, desc)
+                    event_temp(newDiv, title, id, `previews/${entity}/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.png`, desc)
 
                 } else {
                     // if there isn't a subcategory
@@ -218,7 +219,7 @@
                     newDiv.dataset.id = id;
                     newDiv.classList.add("item")
                     newDiv.innerHTML = `<img class="item_image" loading="lazy" src="previews/${shortCategories[scx]}/${id}.webp"><p class="imgdesc">${title}</p>`
-                    event_temp(newDiv, title, id, `previews/${shortCategories[scx]}/${id}.png`, desc)
+                    event_temp(newDiv, title, id, `previews/${entity}/${shortCategories[scx]}/${id}.png`, desc)
                     //console.log(document.body.innerHTML)
                     //console.log(document.head.innerHTML)
                 }
