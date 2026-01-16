@@ -203,8 +203,9 @@
                     //item creation
                     var newDiv = document.createElement('div')
                     newDiv.classList.add("item")
-                    newDiv.innerHTML = `<img class="item_image" loading="lazy" src="previews/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.webp"><p class="imgdesc">${title}</p>`
-                    event_temp(newDiv, title, id, `previews/${entity}/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.png`, desc)
+                    const imgSrc = `previews/${entity}/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.webp`
+                    newDiv.innerHTML = `<img class="item_image" loading="lazy" src="${imgSrc}"><p class="imgdesc">${title}</p>`
+                    event_temp(newDiv, title, id, imgSrc, desc)
 
                 } else {
                     // if there isn't a subcategory
@@ -218,8 +219,9 @@
                     var newDiv = document.createElement('div')
                     newDiv.dataset.id = id;
                     newDiv.classList.add("item")
-                    newDiv.innerHTML = `<img class="item_image" loading="lazy" src="previews/${shortCategories[scx]}/${id}.webp"><p class="imgdesc">${title}</p>`
-                    event_temp(newDiv, title, id, `previews/${entity}/${shortCategories[scx]}/${id}.png`, desc)
+                    const imgSrc = `previews/${entity}/${shortCategories[scx]}/${id}.webp`
+                    newDiv.innerHTML = `<img class="item_image" loading="lazy" src="${imgSrc}"><p class="imgdesc">${title}</p>`
+                    event_temp(newDiv, title, id, imgSrc, desc)
                     //console.log(document.body.innerHTML)
                     //console.log(document.head.innerHTML)
                 }
