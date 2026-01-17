@@ -251,7 +251,7 @@
             });
             params.set("item", "99");
             const modal = document.querySelector(".modal")
-            modal.appendChild(desc)
+            modal.innerHTML += desc;
             modal.classList.remove("modal_hide")
             modal.classList.add("modal_shown")
             const modalBack = document.querySelector(".modal_back")
