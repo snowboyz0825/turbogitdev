@@ -208,6 +208,9 @@
                     var newDiv = document.createElement('div')
                     newDiv.classList.add("item")
                     const imgSrc = `previews/${entity}/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.webp`
+                    if (references[x].features) {
+                        loadFull(`previews/${entity}/${shortCategories[scx]}/${shortsCategories[scx]}/${id}`, newDiv)
+                    }
                     newDiv.innerHTML = `<img class="item_image" loading="lazy" src="${imgSrc}"><p class="imgdesc">${title}</p>`
                     event_temp(newDiv, title, id, imgSrc, desc)
 
@@ -221,7 +224,6 @@
                     }
                     //item creation
                     var newDiv = document.createElement('div')
-                    newDiv.dataset.id = id;
                     newDiv.classList.add("item")
                     const imgSrc = `previews/${entity}/${shortCategories[scx]}/${id}.webp`
                     newDiv.innerHTML = `<img class="item_image" loading="lazy" src="${imgSrc}"><p class="imgdesc">${title}</p>`
@@ -277,6 +279,15 @@
         modalContent.classList.toggle("portrait", isPortrait);
         modaldesc.classList.toggle("portrait", isPortrait);
     } 
+    async function loadFull(Src, newDiv) {
+        Src += "-full"
+        const imgDiv = newDiv.querySelector('.item_image')
+        const fullImg = new Image()
+        fullImg.src = Src
+        fullImg.onload = () => {
+            imgDiv.src = Src
+        }
+    }
 </script>
 
 </html>
