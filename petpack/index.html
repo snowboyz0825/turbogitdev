@@ -208,10 +208,10 @@
                     var newDiv = document.createElement('div')
                     newDiv.classList.add("item")
                     const imgSrc = `previews/${entity}/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.webp`
+                    newDiv.innerHTML = `<img class="item_image" loading="lazy" src="${imgSrc}"><p class="imgdesc">${title}</p>`
                     if (references[x].features) {
                         loadFull(`previews/${entity}/${shortCategories[scx]}/${shortsCategories[scx]}/${id}`, newDiv)
                     }
-                    newDiv.innerHTML = `<img class="item_image" loading="lazy" src="${imgSrc}"><p class="imgdesc">${title}</p>`
                     event_temp(newDiv, title, id, imgSrc, desc)
 
                 } else {
