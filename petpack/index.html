@@ -132,7 +132,7 @@
         <h3 class="modal-x">&times;</h3>
         <h4 class="modal-title"></h4>
         <div class="modal-content"><img class="modal-image">
-                <p class="modal-desc"></p>
+            <p class="modal-desc"></p>
         </div>
     </div>
 </body>
@@ -251,7 +251,8 @@
             });
             params.set("item", "99");
             const modal = document.querySelector(".modal")
-            modal.innerHTML = ""
+            const deleteMeDesc = modal.querySelector(".modal-desc");
+            if (deleteMeDesc) deleteMeDesc.remove();
             modal.innerHTML += desc;
             modal.classList.remove("modal_hide")
             modal.classList.add("modal_shown")
