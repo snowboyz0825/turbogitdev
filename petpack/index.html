@@ -93,10 +93,10 @@
 
         .modal_back {
             position: fixed;
-            width: 100000px;
+            width: 100vw;
             top: 0;
             left: 0;
-            height: 100000px;
+            height: 100vh;
             background-color: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
@@ -254,9 +254,8 @@
             });
             params.set("item", "99");
             const modal = document.querySelector(".modal")
-            const deleteMeDesc = modal.querySelector(".modal-desc");
-            if (deleteMeDesc) deleteMeDesc.remove();
-            modal.innerHTML += desc;
+            const modalDesc = modal.querySelector(".modal-desc");
+            modalDesc.innerHTML = desc;
             modal.classList.remove("modal_hide")
             modal.classList.add("modal_shown")
             const modalBack = document.querySelector(".modal_back")
