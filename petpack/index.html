@@ -171,12 +171,12 @@
             const desc = mainModel.desc
             const entity = mainModel.entity
             if (shortCategories[0]) {
-                const imgSrc = `previews/${entity}/${shortCategories}/${shortsCategories}/${id}.webp`
+                const imgSrc = `previews/${entity}/${shortCategories[0]}/${shortsCategories}/${id}.webp`
                             updateModal(title,id,imgSrc,desc)
 
             } else
             {
-                const imgSrc = `previews/${entity}/${shortCategories}/${id}.webp`
+                const imgSrc = `previews/${entity}/${shortCategories[0]}/${id}.webp`
                             updateModal(title,id,imgSrc,desc)
 
             }
