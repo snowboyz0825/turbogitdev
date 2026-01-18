@@ -257,7 +257,7 @@
     function event_temp(newDiv, title, id, imgSrc, desc) {
         newDiv.addEventListener("click", () => {
             console.log("Clicked item:", title, id);
-            updateModal(newDiv, title, id, imgSrc, desc)
+            updateModal(title, id, imgSrc, desc)
         });
     }
             function updateModal(title, id, imgSrc, desc) {
