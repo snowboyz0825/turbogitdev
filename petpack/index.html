@@ -152,115 +152,125 @@
         })
         document.addEventListener("keydown", (keypressed) => {
             if (keypressed.key === "Escape") {
-                closeModal()
+                closeModal();
             }
-        })
-        const currentUrl = new URLSearchParams(window.location.search)
-        if (currentUrl.get("id")) {
-            
+        })};
+        initialize()
+        populate();
+        async function populate() {
+            var x = -1
+            const temp = await fetch("allays.json");
+            const references = await temp.json();                    const currentUrl = new URLSearchParams(window.location.search)
+        const paramId = currentUrl.get("id")
+        if (paramId) {
+            const mainModel = references.paramId
+            const shortCategories = mainModel.categories_short[0];
+            const shortsCategories = mainModel.subcategories_short[0]
+            const id = mainModel.id
+            const title = mainModel.title
+            const desc = mainModel.desc
+            const entity = mainModel.entity
+            if (shortCategories[0]) {
+                const imgSrc = `previews/${entity}/${shortCategories}/${shortsCategories}/${id}.webp`
+                            updateModal(title,id,imgSrc,desc)
+
+            } else
+            {
+                const imgSrc = `previews/${entity}/${shortCategories}/${id}.webp`
+                            updateModal(title,id,imgSrc,desc)
+
+            }
         }
-    }
-    initialize()
-    populate();
-    async function populate() {
-        var x = -1
-        const temp = await fetch("allays.json");
-        const references = await temp.json();
+            references.forEach(item => {
+                x++
+                console.log(x)
+                let longCategories = (references[x]).categories_long;
+                let shortCategories = (references[x]).categories_short;
+                let longsCategories = (references[x]).subcategories_long;
+                let shortsCategories = (references[x]).subcategories_short
+                let id = references[x].id
+                let title = references[x].title
+                let desc = references[x].desc
+                let entity = references[x].entity
 
-        references.forEach(item => {
-            x++
-            console.log(x)
-            let longCategories = (references[x]).categories_long;
-            let shortCategories = (references[x]).categories_short;
-            let longsCategories = (references[x]).subcategories_long;
-            let shortsCategories = (references[x]).subcategories_short
-            let id = references[x].id
-            let title = references[x].title
-            let desc = references[x].desc
-            let entity = references[x].entity
+                let scx = -1
+                shortCategories.forEach(item => {
+                    scx++
+                    // if the category does not exist, we create one
+                    if (!document.querySelector("." + shortCategories[scx] + ".heading")) {
 
-            let scx = -1
-            shortCategories.forEach(item => {
-                scx++
-                // if the category does not exist, we create one
-                if (!document.querySelector("." + shortCategories[scx] + ".heading")) {
+                        let newH2 = document.createElement('h1')
+                        newH2.classList.add(shortCategories[scx], "heading")
+                        newH2.innerHTML = longCategories[scx]
+                        console.log(newH2.outerHTML)
+                        document.body.appendChild(newH2)
+                    }
+                    if (shortsCategories[0]) {
+                        // if there is a subcatregory
+                        //we check if it exists
+                        if (!document.querySelector("." + shortsCategories[scx] + ".subheading")) {
+                            //if it doesn't we make one
+                            let newH4 = document.createElement('h4')
+                            newH4.classList.add(shortsCategories[scx], "subheading")
+                            newH4.innerHTML = longsCategories[scx]
+                            console.log(newH4.outerHTML)
+                            document.body.appendChild(newH4)
+                        }
+                        //grid creation
+                        var maingrid = document.querySelector("." + shortsCategories[scx] + ".maingrid")
+                        //if there isn't a maingrid of the correct class
+                        if (!maingrid) {
+                            var maingrid = document.createElement('div')
+                            maingrid.classList.add("maingrid", shortsCategories[scx])
+                        }
+                        //item creation
+                        var newDiv = document.createElement('div')
+                        newDiv.classList.add("item")
+                        const imgSrc = `previews/${entity}/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.webp`
+                        newDiv.innerHTML = `<img class="item_image" loading="lazy" src="${imgSrc}"><p class="imgdesc">${title}</p>`
+                        if (references[x].features) {
+                            loadFull(`previews/${entity}/${shortCategories[scx]}/${shortsCategories[scx]}/${id}`, newDiv)
+                        }
+                        event_temp(newDiv, title, id, imgSrc, desc)
 
-                    let newH2 = document.createElement('h1')
-                    newH2.classList.add(shortCategories[scx], "heading")
-                    newH2.innerHTML = longCategories[scx]
-                    console.log(newH2.outerHTML)
-                    document.body.appendChild(newH2)
-                }
-                if (shortsCategories[0]) {
-                    // if there is a subcatregory
-                    //we check if it exists
-                    if (!document.querySelector("." + shortsCategories[scx] + ".subheading")) {
-                        //if it doesn't we make one
-                        let newH4 = document.createElement('h4')
-                        newH4.classList.add(shortsCategories[scx], "subheading")
-                        newH4.innerHTML = longsCategories[scx]
-                        console.log(newH4.outerHTML)
-                        document.body.appendChild(newH4)
+                    } else {
+                        // if there isn't a subcategory
+                        var maingrid = document.querySelector("." + shortCategories[scx] + ".maingrid")
+                        //if there isn't a maingrid of the correct class
+                        if (!maingrid) {
+                            var maingrid = document.createElement('div')
+                            maingrid.classList.add("maingrid", shortCategories[scx])
+                        }
+                        //item creation
+                        var newDiv = document.createElement('div')
+                        newDiv.classList.add("item")
+                        const imgSrc = `previews/${entity}/${shortCategories[scx]}/${id}.webp`
+                        newDiv.innerHTML = `<img class="item_image" loading="lazy" src="${imgSrc}"><p class="imgdesc">${title}</p>`
+                        event_temp(newDiv, title, id, imgSrc, desc)
                     }
-                    //grid creation
-                    var maingrid = document.querySelector("." + shortsCategories[scx] + ".maingrid")
-                    //if there isn't a maingrid of the correct class
-                    if (!maingrid) {
-                        var maingrid = document.createElement('div')
-                        maingrid.classList.add("maingrid", shortsCategories[scx])
-                    }
-                    //item creation
-                    var newDiv = document.createElement('div')
-                    newDiv.classList.add("item")
-                    const imgSrc = `previews/${entity}/${shortCategories[scx]}/${shortsCategories[scx]}/${id}.webp`
-                    newDiv.innerHTML = `<img class="item_image" loading="lazy" src="${imgSrc}"><p class="imgdesc">${title}</p>`
-                    if (references[x].features) {
-                        loadFull(`previews/${entity}/${shortCategories[scx]}/${shortsCategories[scx]}/${id}`, newDiv)
-                    }
-                    event_temp(newDiv, title, id, imgSrc, desc)
-
-                } else {
-                    // if there isn't a subcategory
-                    var maingrid = document.querySelector("." + shortCategories[scx] + ".maingrid")
-                    //if there isn't a maingrid of the correct class
-                    if (!maingrid) {
-                        var maingrid = document.createElement('div')
-                        maingrid.classList.add("maingrid", shortCategories[scx])
-                    }
-                    //item creation
-                    var newDiv = document.createElement('div')
-                    newDiv.classList.add("item")
-                    const imgSrc = `previews/${entity}/${shortCategories[scx]}/${id}.webp`
-                    newDiv.innerHTML = `<img class="item_image" loading="lazy" src="${imgSrc}"><p class="imgdesc">${title}</p>`
-                    event_temp(newDiv, title, id, imgSrc, desc)
-                    //console.log(document.body.innerHTML)
-                    //console.log(document.head.innerHTML)
-                }
-                maingrid.appendChild(newDiv);
-                document.body.appendChild(maingrid)
+                    maingrid.appendChild(newDiv);
+                    document.body.appendChild(maingrid)
+                })
             })
-        })
-        //    console.log(longCategories)
-        //    console.log(shortCategories)
-    };
+        }
 
-    function closeModal() {
-        const modal = document.querySelector(".modal")
-        modal.classList.remove("modal_shown")
-        modal.classList.add("modal_hide")
-        const modalBack = document.querySelector(".modal_back")
-        modalBack.classList.remove("modal_shown")
-        modalBack.classList.add("modal_hide")
-        deleteParam("id")
-    }
-    //modal logic
-    function event_temp(newDiv, title, id, imgSrc, desc) {
-        newDiv.addEventListener("click", () => {
-            console.log("Clicked item:", title, id);
-            updateModal(title, id, imgSrc, desc)
-        });
-    }
-            function updateModal(title, id, imgSrc, desc) {
+        function closeModal() {
+            const modal = document.querySelector(".modal")
+            modal.classList.remove("modal_shown")
+            modal.classList.add("modal_hide")
+            const modalBack = document.querySelector(".modal_back")
+            modalBack.classList.remove("modal_shown")
+            modalBack.classList.add("modal_hide")
+            deleteParam("id")
+        }
+        //modal logic
+        function event_temp(newDiv, title, id, imgSrc, desc) {
+            newDiv.addEventListener("click", () => {
+                console.log("Clicked item:", title, id);
+                updateModal(title, id, imgSrc, desc)
+            });
+        }
+        function updateModal(title, id, imgSrc, desc) {
             const modal = document.querySelector(".modal")
             const modalDesc = modal.querySelector(".modal-desc");
             modalDesc.innerHTML = desc;
@@ -275,46 +285,46 @@
             modalImage.src = imgSrc
             setParam("id", id, "push")
             setModalLayout()
-}
-    //changes modal based on width/height
-    function setModalLayout() {
-        const modalContent = document.querySelector(".modal-content")
-        const modaldesc = document.querySelector(".modal-desc")
-        const isPortrait = window.innerHeight > window.innerWidth
-        modalContent.classList.toggle("portrait", isPortrait);
-        modaldesc.classList.toggle("portrait", isPortrait);
-    }
-    async function loadFull(Src, newDiv) {
-        Src += "-full.webp"
-        const imgDiv = newDiv.querySelector('.item_image')
-        const fullImg = new Image()
-        fullImg.src = Src
-        fullImg.onload = () => {
-            imgDiv.src = Src
         }
-    }
-    //params
-    function setParam(setKey, setValue, pushOrReplace) {
-        const currentUrl = new URL(window.location)
-        currentUrl.searchParams.set(setKey, setValue)
-        if (pushOrReplace === "push") {
-            history.pushState({}, "", currentUrl)
-        } else {
-            history.replaceState({}, "", currentUrl)
+        //changes modal based on width/height
+        function setModalLayout() {
+            const modalContent = document.querySelector(".modal-content")
+            const modaldesc = document.querySelector(".modal-desc")
+            const isPortrait = window.innerHeight > window.innerWidth
+            modalContent.classList.toggle("portrait", isPortrait);
+            modaldesc.classList.toggle("portrait", isPortrait);
         }
-    }
-    function deleteParam(removeThis, pushOrReplace) {
-        const currentUrl = new URL(window.location)
-        currentUrl.searchParams.delete(removeThis)
-        if (pushOrReplace === "push") {
-            history.pushState({}, "", currentUrl)
-        } else {
-            history.replaceState({}, "", currentUrl)
+        async function loadFull(Src, newDiv) {
+            Src += "-full.webp"
+            const imgDiv = newDiv.querySelector('.item_image')
+            const fullImg = new Image()
+            fullImg.src = Src
+            fullImg.onload = () => {
+                imgDiv.src = Src
+            }
         }
-    }
-    function getParam(getThis) {
-        return new URLSearchParams(window.location.search).get(getThis);
-    }
+        //params
+        function setParam(setKey, setValue, pushOrReplace) {
+            const currentUrl = new URL(window.location)
+            currentUrl.searchParams.set(setKey, setValue)
+            if (pushOrReplace === "push") {
+                history.pushState({}, "", currentUrl)
+            } else {
+                history.replaceState({}, "", currentUrl)
+            }
+        }
+        function deleteParam(removeThis, pushOrReplace) {
+            const currentUrl = new URL(window.location)
+            currentUrl.searchParams.delete(removeThis)
+            if (pushOrReplace === "push") {
+                history.pushState({}, "", currentUrl)
+            } else {
+                history.replaceState({}, "", currentUrl)
+            }
+        }
+        function getParam(getThis) {
+            return new URLSearchParams(window.location.search).get(getThis);
+        }
 </script>
 
 </html>
