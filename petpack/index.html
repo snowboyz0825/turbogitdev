@@ -254,7 +254,6 @@
             const params = new URLSearchParams({
                 item: 5,
             });
-            params.set("item", "99");
             const modal = document.querySelector(".modal")
             const modalDesc = modal.querySelector(".modal-desc");
             modalDesc.innerHTML = desc;
@@ -267,6 +266,7 @@
             const modalImage = document.querySelector(".modal-image")
             modalTitle.textContent = title
             modalImage.src = imgSrc
+            setParam("id", id)
             setModalLayout()
         });
     }
@@ -278,7 +278,7 @@
         const isPortrait = window.innerHeight > window.innerWidth
         modalContent.classList.toggle("portrait", isPortrait);
         modaldesc.classList.toggle("portrait", isPortrait);
-    } 
+    }
     async function loadFull(Src, newDiv) {
         Src += "-full.webp"
         const imgDiv = newDiv.querySelector('.item_image')
@@ -287,6 +287,28 @@
         fullImg.onload = () => {
             imgDiv.src = Src
         }
+    }
+
+    function setParam(setKey, setValue, pushOrReplace) {
+        const currentUrl = new URL(window.location)
+        currentUrl.searchParams.set(setKey, setValue)
+        if (pushOrReplace === "push") {
+            history.pushState({}, "", currentUrl)
+        } else {
+            history.replaceState({}, "", currentUrl)
+        }
+    }
+    function deleteParam(removeThis, pushOrReplace) {
+        const currentUrl = new URL(window.location)
+        currentUrl.searchParams.delete(removeThis)
+        if (pushOrReplace === "push") {
+            history.pushState({}, "", currentUrl)
+        } else {
+            history.replaceState({}, "", currentUrl)
+        }
+    }
+    function getParam(getThis) {
+        return new URLSearchParams(window.location.search).get(getThis);
     }
 </script>
 
