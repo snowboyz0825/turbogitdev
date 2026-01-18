@@ -163,7 +163,7 @@
             const references = await temp.json();                    const currentUrl = new URLSearchParams(window.location.search)
         const paramId = currentUrl.get("id")
         if (paramId) {
-            const mainModel = references.paramId
+            const mainModel = references.find(item => item.id === paramId);
             const shortCategories = mainModel.categories_short[0];
             const shortsCategories = mainModel.subcategories_short[0]
             const id = mainModel.id
