@@ -146,7 +146,6 @@
         const modalBack = document.querySelector(".modal_back")
         modalX.addEventListener("click", () => {
             closeModal()
-            console.log("clicked x")
         })
         modalBack.addEventListener("click", () => {
             closeModal()
@@ -156,6 +155,10 @@
                 closeModal()
             }
         })
+        const currentUrl = new URLSearchParams(window.location.search)
+        if (currentUrl.get("id")) {
+            
+        }
     }
     initialize()
     populate();
@@ -254,9 +257,10 @@
     function event_temp(newDiv, title, id, imgSrc, desc) {
         newDiv.addEventListener("click", () => {
             console.log("Clicked item:", title, id);
-            const params = new URLSearchParams({
-                item: 5,
-            });
+            updateModal(newDiv, title, id, imgSrc, desc)
+        });
+    }
+            function updateModal(title, id, imgSrc, desc) {
             const modal = document.querySelector(".modal")
             const modalDesc = modal.querySelector(".modal-desc");
             modalDesc.innerHTML = desc;
@@ -271,9 +275,7 @@
             modalImage.src = imgSrc
             setParam("id", id, "push")
             setModalLayout()
-        });
-    }
-
+}
     //changes modal based on width/height
     function setModalLayout() {
         const modalContent = document.querySelector(".modal-content")
@@ -291,7 +293,7 @@
             imgDiv.src = Src
         }
     }
-
+    //params
     function setParam(setKey, setValue, pushOrReplace) {
         const currentUrl = new URL(window.location)
         currentUrl.searchParams.set(setKey, setValue)
